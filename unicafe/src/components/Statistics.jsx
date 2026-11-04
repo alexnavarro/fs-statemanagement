@@ -1,12 +1,6 @@
 import { useValues } from "../store"
 const Statistics = () => {
   const { good, bad, neutral } = useValues()
-  // const good = 0
-  // const neutral = 0
-  // const bad = 0
-  // const all = 0
-  // const average = 0
-  // const positive = 0
 
    if (bad == 0 && good == 0 && neutral == 0) {
     return (<p>No feedback given</p>)
@@ -19,7 +13,7 @@ const Statistics = () => {
   return (
     <div>
       <h2>statistics</h2>
-      <table>``
+      <table>
         <tbody>
           <tr><td>good</td><td>{good}</td></tr>
           <tr><td>neutral</td><td>{neutral}</td></tr>
